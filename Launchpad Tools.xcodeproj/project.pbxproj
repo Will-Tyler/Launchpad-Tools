@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03700015A79843918B7223BA /* Pods_Launchpad_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */; };
 		4C24721121F3C0930024A855 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24721021F3C0930024A855 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		4C24720D21F3C0930024A855 /* Launchpad Tools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Launchpad Tools"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C24721021F3C0930024A855 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Launchpad_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFED5BBD756EB2564A8CFE3 /* Pods-Launchpad Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launchpad Tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-Launchpad Tools/Pods-Launchpad Tools.release.xcconfig"; sourceTree = "<group>"; };
+		C1B2F82255EE01282C1F9B59 /* Pods-Launchpad Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launchpad Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Launchpad Tools/Pods-Launchpad Tools.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +36,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03700015A79843918B7223BA /* Pods_Launchpad_Tools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FF05E52D6B31DDA74231D61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C24720421F3C0930024A855 = {
 			isa = PBXGroup;
 			children = (
 				4C24720F21F3C0930024A855 /* Launchpad Tools */,
 				4C24720E21F3C0930024A855 /* Products */,
+				E099402EFE3448B32347DB19 /* Pods */,
+				2FF05E52D6B31DDA74231D61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +77,15 @@
 			path = "Launchpad Tools";
 			sourceTree = "<group>";
 		};
+		E099402EFE3448B32347DB19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1B2F82255EE01282C1F9B59 /* Pods-Launchpad Tools.debug.xcconfig */,
+				BDFED5BBD756EB2564A8CFE3 /* Pods-Launchpad Tools.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -69,6 +93,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C24721421F3C0930024A855 /* Build configuration list for PBXNativeTarget "Launchpad Tools" */;
 			buildPhases = (
+				2E284CECDD6C08365CDDAE37 /* [CP] Check Pods Manifest.lock */,
 				4C24720921F3C0930024A855 /* Sources */,
 				4C24720A21F3C0930024A855 /* Frameworks */,
 				4C24720B21F3C0930024A855 /* CopyFiles */,
@@ -113,6 +138,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E284CECDD6C08365CDDAE37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Launchpad Tools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C24720921F3C0930024A855 /* Sources */ = {
@@ -243,6 +293,7 @@
 		};
 		4C24721521F3C0930024A855 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1B2F82255EE01282C1F9B59 /* Pods-Launchpad Tools.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83A9Z5EMT8;
@@ -253,6 +304,7 @@
 		};
 		4C24721621F3C0930024A855 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDFED5BBD756EB2564A8CFE3 /* Pods-Launchpad Tools.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83A9Z5EMT8;

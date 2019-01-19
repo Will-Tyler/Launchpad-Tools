@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SQLite
 
 
-print("Hello, World!")
+let database = try Connection("<#T##filename: String##String#>")
