@@ -10,4 +10,10 @@ import Foundation
 import SQLite
 
 
-let database = try Connection("<#T##filename: String##String#>")
+print("Hello, World!")
+let database = try Connection("/var/folders/s5/7swt2cts5xn7fldkx_jlp4jm0000gn/0/com.apple.dock.launchpad/db/db")
+let items = Table("items")
+
+for item in try database.prepare(items) {
+	print(item)
+}

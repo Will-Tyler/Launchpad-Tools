@@ -6,6 +6,5 @@ target 'Launchpad Tools' do
   use_frameworks!
 
   # Pods for Launchpad Tools
-	pod 'SQLite.swift'
 
 end

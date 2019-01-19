@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03700015A79843918B7223BA /* Pods_Launchpad_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */; };
 		4C24721121F3C0930024A855 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24721021F3C0930024A855 /* main.swift */; };
+		8515A9C993677A1F08DB9AFA /* Pods_Launchpad_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +26,7 @@
 /* Begin PBXFileReference section */
 		4C24720D21F3C0930024A855 /* Launchpad Tools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Launchpad Tools"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C24721021F3C0930024A855 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4C24721821F3C5F00024A855 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Launchpad_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFED5BBD756EB2564A8CFE3 /* Pods-Launchpad Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launchpad Tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-Launchpad Tools/Pods-Launchpad Tools.release.xcconfig"; sourceTree = "<group>"; };
 		C1B2F82255EE01282C1F9B59 /* Pods-Launchpad Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launchpad Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Launchpad Tools/Pods-Launchpad Tools.debug.xcconfig"; sourceTree = "<group>"; };
@@ -36,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03700015A79843918B7223BA /* Pods_Launchpad_Tools.framework in Frameworks */,
+				8515A9C993677A1F08DB9AFA /* Pods_Launchpad_Tools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */,
+				4C24721821F3C5F00024A855 /* SQLite.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
