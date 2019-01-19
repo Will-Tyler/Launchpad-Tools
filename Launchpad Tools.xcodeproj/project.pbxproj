@@ -8,6 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		4C24721121F3C0930024A855 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C24721021F3C0930024A855 /* main.swift */; };
+		4C2472FC21F3D2490024A855 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472DE21F3D2490024A855 /* SQLite-Bridging.m */; };
+		4C2472FD21F3D2490024A855 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472E221F3D2490024A855 /* Connection.swift */; };
+		4C2472FE21F3D2490024A855 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472E321F3D2490024A855 /* Blob.swift */; };
+		4C2472FF21F3D2490024A855 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472E421F3D2490024A855 /* Errors.swift */; };
+		4C24730021F3D2490024A855 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472E521F3D2490024A855 /* Statement.swift */; };
+		4C24730121F3D2490024A855 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472E621F3D2490024A855 /* Value.swift */; };
+		4C24730221F3D2490024A855 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472E721F3D2490024A855 /* Helpers.swift */; };
+		4C24730321F3D2490024A855 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472E921F3D2490024A855 /* Cipher.swift */; };
+		4C24730421F3D2490024A855 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472EA21F3D2490024A855 /* RTree.swift */; };
+		4C24730521F3D2490024A855 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472EB21F3D2490024A855 /* FTS4.swift */; };
+		4C24730621F3D2490024A855 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472EC21F3D2490024A855 /* FTS5.swift */; };
+		4C24730721F3D2490024A855 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472ED21F3D2490024A855 /* Foundation.swift */; };
+		4C24730821F3D2490024A855 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472F021F3D2490024A855 /* Query.swift */; };
+		4C24730921F3D2490024A855 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472F121F3D2490024A855 /* Coding.swift */; };
+		4C24730A21F3D2490024A855 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472F221F3D2490024A855 /* Expression.swift */; };
+		4C24730B21F3D2490024A855 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472F321F3D2490024A855 /* CoreFunctions.swift */; };
+		4C24730C21F3D2490024A855 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472F421F3D2490024A855 /* Collation.swift */; };
+		4C24730D21F3D2490024A855 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472F521F3D2490024A855 /* CustomFunctions.swift */; };
+		4C24730E21F3D2490024A855 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472F621F3D2490024A855 /* DateAndTimeFunctions.swift */; };
+		4C24730F21F3D2490024A855 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472F721F3D2490024A855 /* Setter.swift */; };
+		4C24731021F3D2490024A855 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472F821F3D2490024A855 /* Operators.swift */; };
+		4C24731121F3D2490024A855 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472F921F3D2490024A855 /* Schema.swift */; };
+		4C24731221F3D2490024A855 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472FA21F3D2490024A855 /* AggregateFunctions.swift */; };
 		8515A9C993677A1F08DB9AFA /* Pods_Launchpad_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +49,33 @@
 /* Begin PBXFileReference section */
 		4C24720D21F3C0930024A855 /* Launchpad Tools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Launchpad Tools"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C24721021F3C0930024A855 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		4C24721821F3C5F00024A855 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C2472DD21F3D2490024A855 /* SQLite-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLite-Bridging.h"; sourceTree = "<group>"; };
+		4C2472DE21F3D2490024A855 /* SQLite-Bridging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SQLite-Bridging.m"; sourceTree = "<group>"; };
+		4C2472DF21F3D2490024A855 /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
+		4C2472E221F3D2490024A855 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		4C2472E321F3D2490024A855 /* Blob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
+		4C2472E421F3D2490024A855 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		4C2472E521F3D2490024A855 /* Statement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		4C2472E621F3D2490024A855 /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		4C2472E721F3D2490024A855 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		4C2472E921F3D2490024A855 /* Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cipher.swift; sourceTree = "<group>"; };
+		4C2472EA21F3D2490024A855 /* RTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTree.swift; sourceTree = "<group>"; };
+		4C2472EB21F3D2490024A855 /* FTS4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTS4.swift; sourceTree = "<group>"; };
+		4C2472EC21F3D2490024A855 /* FTS5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTS5.swift; sourceTree = "<group>"; };
+		4C2472ED21F3D2490024A855 /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		4C2472EE21F3D2490024A855 /* SQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLite.h; sourceTree = "<group>"; };
+		4C2472F021F3D2490024A855 /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		4C2472F121F3D2490024A855 /* Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coding.swift; sourceTree = "<group>"; };
+		4C2472F221F3D2490024A855 /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		4C2472F321F3D2490024A855 /* CoreFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreFunctions.swift; sourceTree = "<group>"; };
+		4C2472F421F3D2490024A855 /* Collation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collation.swift; sourceTree = "<group>"; };
+		4C2472F521F3D2490024A855 /* CustomFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFunctions.swift; sourceTree = "<group>"; };
+		4C2472F621F3D2490024A855 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateAndTimeFunctions.swift; sourceTree = "<group>"; };
+		4C2472F721F3D2490024A855 /* Setter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setter.swift; sourceTree = "<group>"; };
+		4C2472F821F3D2490024A855 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		4C2472F921F3D2490024A855 /* Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
+		4C2472FA21F3D2490024A855 /* AggregateFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateFunctions.swift; sourceTree = "<group>"; };
+		4C2472FB21F3D2490024A855 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Launchpad_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFED5BBD756EB2564A8CFE3 /* Pods-Launchpad Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launchpad Tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-Launchpad Tools/Pods-Launchpad Tools.release.xcconfig"; sourceTree = "<group>"; };
 		C1B2F82255EE01282C1F9B59 /* Pods-Launchpad Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launchpad Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Launchpad Tools/Pods-Launchpad Tools.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */,
-				4C24721821F3C5F00024A855 /* SQLite.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -57,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				4C24720F21F3C0930024A855 /* Launchpad Tools */,
+				4C2472DA21F3D2490024A855 /* SQLite */,
 				4C24720E21F3C0930024A855 /* Products */,
 				E099402EFE3448B32347DB19 /* Pods */,
 				2FF05E52D6B31DDA74231D61 /* Frameworks */,
@@ -77,6 +126,88 @@
 				4C24721021F3C0930024A855 /* main.swift */,
 			);
 			path = "Launchpad Tools";
+			sourceTree = "<group>";
+		};
+		4C2472DA21F3D2490024A855 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				4C2472DB21F3D2490024A855 /* SQLiteObjc */,
+				4C2472E021F3D2490024A855 /* SQLite */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		4C2472DB21F3D2490024A855 /* SQLiteObjc */ = {
+			isa = PBXGroup;
+			children = (
+				4C2472DC21F3D2490024A855 /* include */,
+				4C2472DE21F3D2490024A855 /* SQLite-Bridging.m */,
+				4C2472DF21F3D2490024A855 /* fts3_tokenizer.h */,
+			);
+			path = SQLiteObjc;
+			sourceTree = "<group>";
+		};
+		4C2472DC21F3D2490024A855 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4C2472DD21F3D2490024A855 /* SQLite-Bridging.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4C2472E021F3D2490024A855 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				4C2472E121F3D2490024A855 /* Core */,
+				4C2472E721F3D2490024A855 /* Helpers.swift */,
+				4C2472E821F3D2490024A855 /* Extensions */,
+				4C2472ED21F3D2490024A855 /* Foundation.swift */,
+				4C2472EE21F3D2490024A855 /* SQLite.h */,
+				4C2472EF21F3D2490024A855 /* Typed */,
+				4C2472FB21F3D2490024A855 /* Info.plist */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		4C2472E121F3D2490024A855 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4C2472E221F3D2490024A855 /* Connection.swift */,
+				4C2472E321F3D2490024A855 /* Blob.swift */,
+				4C2472E421F3D2490024A855 /* Errors.swift */,
+				4C2472E521F3D2490024A855 /* Statement.swift */,
+				4C2472E621F3D2490024A855 /* Value.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4C2472E821F3D2490024A855 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C2472E921F3D2490024A855 /* Cipher.swift */,
+				4C2472EA21F3D2490024A855 /* RTree.swift */,
+				4C2472EB21F3D2490024A855 /* FTS4.swift */,
+				4C2472EC21F3D2490024A855 /* FTS5.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4C2472EF21F3D2490024A855 /* Typed */ = {
+			isa = PBXGroup;
+			children = (
+				4C2472F021F3D2490024A855 /* Query.swift */,
+				4C2472F121F3D2490024A855 /* Coding.swift */,
+				4C2472F221F3D2490024A855 /* Expression.swift */,
+				4C2472F321F3D2490024A855 /* CoreFunctions.swift */,
+				4C2472F421F3D2490024A855 /* Collation.swift */,
+				4C2472F521F3D2490024A855 /* CustomFunctions.swift */,
+				4C2472F621F3D2490024A855 /* DateAndTimeFunctions.swift */,
+				4C2472F721F3D2490024A855 /* Setter.swift */,
+				4C2472F821F3D2490024A855 /* Operators.swift */,
+				4C2472F921F3D2490024A855 /* Schema.swift */,
+				4C2472FA21F3D2490024A855 /* AggregateFunctions.swift */,
+			);
+			path = Typed;
 			sourceTree = "<group>";
 		};
 		E099402EFE3448B32347DB19 /* Pods */ = {
@@ -171,7 +302,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C24730521F3D2490024A855 /* FTS4.swift in Sources */,
+				4C2472FE21F3D2490024A855 /* Blob.swift in Sources */,
+				4C2472FF21F3D2490024A855 /* Errors.swift in Sources */,
+				4C24730921F3D2490024A855 /* Coding.swift in Sources */,
+				4C24730421F3D2490024A855 /* RTree.swift in Sources */,
+				4C24730121F3D2490024A855 /* Value.swift in Sources */,
+				4C24730E21F3D2490024A855 /* DateAndTimeFunctions.swift in Sources */,
+				4C24730321F3D2490024A855 /* Cipher.swift in Sources */,
+				4C24730F21F3D2490024A855 /* Setter.swift in Sources */,
+				4C24730221F3D2490024A855 /* Helpers.swift in Sources */,
 				4C24721121F3C0930024A855 /* main.swift in Sources */,
+				4C24730821F3D2490024A855 /* Query.swift in Sources */,
+				4C24730021F3D2490024A855 /* Statement.swift in Sources */,
+				4C24730A21F3D2490024A855 /* Expression.swift in Sources */,
+				4C2472FD21F3D2490024A855 /* Connection.swift in Sources */,
+				4C24730C21F3D2490024A855 /* Collation.swift in Sources */,
+				4C24730D21F3D2490024A855 /* CustomFunctions.swift in Sources */,
+				4C24731021F3D2490024A855 /* Operators.swift in Sources */,
+				4C2472FC21F3D2490024A855 /* SQLite-Bridging.m in Sources */,
+				4C24731221F3D2490024A855 /* AggregateFunctions.swift in Sources */,
+				4C24730621F3D2490024A855 /* FTS5.swift in Sources */,
+				4C24730721F3D2490024A855 /* Foundation.swift in Sources */,
+				4C24731121F3D2490024A855 /* Schema.swift in Sources */,
+				4C24730B21F3D2490024A855 /* CoreFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1B2F82255EE01282C1F9B59 /* Pods-Launchpad Tools.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83A9Z5EMT8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BDFED5BBD756EB2564A8CFE3 /* Pods-Launchpad Tools.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83A9Z5EMT8;
 				PRODUCT_NAME = "$(TARGET_NAME)";

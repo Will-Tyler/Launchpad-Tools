@@ -7,13 +7,14 @@
 //
 
 import Foundation
-import SQLite
 
 
-print("Hello, World!")
-let database = try Connection("/var/folders/s5/7swt2cts5xn7fldkx_jlp4jm0000gn/0/com.apple.dock.launchpad/db/db")
+_ = "SELECT rowid, title FROM apps WHERE rowid IN (SELECT rowid FROM items WHERE parent_id = 137 OR parent_id = 138) ORDER BY title ASC LIMIT 35;"
+
+let path = "/var/folders/s5/7swt2cts5xn7fldkx_jlp4jm0000gn/0/com.apple.dock.launchpad/db/db"
+let db = try Connection(path)
 let items = Table("items")
 
-for item in try database.prepare(items) {
+for item in try db.prepare(items) {
 	print(item)
 }
