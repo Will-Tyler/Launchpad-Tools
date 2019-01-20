@@ -31,6 +31,9 @@
 		4C24731021F3D2490024A855 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472F821F3D2490024A855 /* Operators.swift */; };
 		4C24731121F3D2490024A855 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472F921F3D2490024A855 /* Schema.swift */; };
 		4C24731221F3D2490024A855 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2472FA21F3D2490024A855 /* AggregateFunctions.swift */; };
+		4C46E09521F4DCDF00927669 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46E09421F4DCDF00927669 /* Item.swift */; };
+		4C46E09721F4DCEB00927669 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46E09621F4DCEB00927669 /* App.swift */; };
+		4C46E09921F4DEA200927669 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46E09821F4DEA200927669 /* Group.swift */; };
 		8515A9C993677A1F08DB9AFA /* Pods_Launchpad_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +80,9 @@
 		4C2472FA21F3D2490024A855 /* AggregateFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateFunctions.swift; sourceTree = "<group>"; };
 		4C2472FB21F3D2490024A855 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C24731321F3F6290024A855 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4C46E09421F4DCDF00927669 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4C46E09621F4DCEB00927669 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		4C46E09821F4DEA200927669 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Launchpad_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFED5BBD756EB2564A8CFE3 /* Pods-Launchpad Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launchpad Tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-Launchpad Tools/Pods-Launchpad Tools.release.xcconfig"; sourceTree = "<group>"; };
 		C1B2F82255EE01282C1F9B59 /* Pods-Launchpad Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launchpad Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Launchpad Tools/Pods-Launchpad Tools.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				4C24721021F3C0930024A855 /* main.swift */,
+				4C46E09621F4DCEB00927669 /* App.swift */,
+				4C46E09821F4DEA200927669 /* Group.swift */,
+				4C46E09421F4DCDF00927669 /* Item.swift */,
 			);
 			path = "Launchpad Tools";
 			sourceTree = "<group>";
@@ -309,13 +318,16 @@
 				4C2472FF21F3D2490024A855 /* Errors.swift in Sources */,
 				4C24730921F3D2490024A855 /* Coding.swift in Sources */,
 				4C24730421F3D2490024A855 /* RTree.swift in Sources */,
+				4C46E09521F4DCDF00927669 /* Item.swift in Sources */,
 				4C24730121F3D2490024A855 /* Value.swift in Sources */,
 				4C24730E21F3D2490024A855 /* DateAndTimeFunctions.swift in Sources */,
 				4C24730321F3D2490024A855 /* Cipher.swift in Sources */,
+				4C46E09921F4DEA200927669 /* Group.swift in Sources */,
 				4C24730F21F3D2490024A855 /* Setter.swift in Sources */,
 				4C24730221F3D2490024A855 /* Helpers.swift in Sources */,
 				4C24721121F3C0930024A855 /* main.swift in Sources */,
 				4C24730821F3D2490024A855 /* Query.swift in Sources */,
+				4C46E09721F4DCEB00927669 /* App.swift in Sources */,
 				4C24730021F3D2490024A855 /* Statement.swift in Sources */,
 				4C24730A21F3D2490024A855 /* Expression.swift in Sources */,
 				4C2472FD21F3D2490024A855 /* Connection.swift in Sources */,

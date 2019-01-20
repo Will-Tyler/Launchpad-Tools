@@ -23,3 +23,5 @@ My process was roughly:
  ## Remarks
  
  Hopefully, someone with more time than me can make a more all-encompasing set of Launchpad tools or a Launchpad API.
+ 
+ To completely reset Launchpad, run `defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock` in the terminal. To just reload Launchpad without resetting it to its default configuration, run `killall Dock`.
