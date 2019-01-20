@@ -52,42 +52,54 @@ var shouldIgnoreItemUpdates: Bool {
 	}
 }
 
-print(shouldIgnoreItemUpdates)
-
 shouldIgnoreItemUpdates = true
 
-print(shouldIgnoreItemUpdates)
+var index = 0
+let count = appItems.count
+
+while index < count-1 {
+	let left = appItems[index]
+	let right = appItems[index+1]
+	let leftTitle = appItems[index].title
+	let rightTitle = appItems[index+1].title
+
+	if leftTitle > rightTitle { // should swap
+		appItems[index] = right
+		appItems[index+1] = left
+
+		let leftTable = items.filter(rowid == left.rowID)
+		let leftRow = (try db.prepare(leftTable)).map({ $0 }).first!
+		let leftParent = leftRow[parentID]
+		let leftOrdering = leftRow[ordering]
+
+		let rightTable = items.filter(rowid == right.rowID)
+		let rightRow = (try db.prepare(rightTable)).map({ $0 }).first!
+		let rightParent = rightRow[parentID]
+		let rightOrdering = rightRow[ordering]
+
+		let leftParentUpdate = leftTable.update(parentID <- rightParent)
+		let leftOrderingUpdate = leftTable.update(ordering <- rightOrdering)
+
+		let rightParentUpdate = rightTable.update(parentID <- leftParent)
+		let rightOrderingUpdate = rightTable.update(ordering <- leftOrdering)
+
+		try db.run(leftParentUpdate)
+		try db.run(leftOrderingUpdate)
+
+		try db.run(rightParentUpdate)
+		try db.run(rightOrderingUpdate)
+
+		if index > 0 {
+			index -= 1
+		}
+	}
+	else {
+		index += 1
+	}
+}
 
 shouldIgnoreItemUpdates = false
 
-print(shouldIgnoreItemUpdates)
-
-//var index = 0
-//let count = appItems.count
-//
-//while index < count-1 {
-//	let left = appItems[index]
-//	let right = appItems[index+1]
-//	let leftTitle = appItems[index].title
-//	let rightTitle = appItems[index+1].title
-//
-//	if leftTitle > rightTitle { // should swap
-//		appItems[index] = right
-//		appItems[index+1] = left
-//
-//		let leftTable = items.filter(rowid == left.rowID)
-//		let leftParent = leftTable[parentID]
-//		let leftOrdering = leftTable[ordering]
-//
-//		let rightTable = items.filter(rowid == right.rowID)
-//		let rightParent = rightTable[parentID]
-//		let rightOrdering = rightTable[ordering]
-//
-//		if index > 0 {
-//			index -= 1
-//		}
-//	}
-//	else {
-//		index += 1
-//	}
-//}
+for appItem in appItems {
+	print(appItem.title)
+}
