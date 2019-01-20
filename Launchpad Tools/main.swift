@@ -50,26 +50,6 @@ func getGroups() throws -> [Group] {
 	return result.map({ Group(itemID: $0[itemID], categoryID: $0[categoryID], title: $0[title]) })
 }
 
-let items = try getItems()
-let apps = try getApps()
-let groups = try getGroups()
-
-for array in [items, apps, groups] as [[Any]] {
-	for item in array {
-		print(item)
-	}
-}
-
-var parents = Set<Int64>()
-
-for item in items {
-	parents.insert(item.parentID)
-}
-
-for parent in parents {
-	print(parent)
-}
-
 fileprivate let title = Expression<String>("title")
 fileprivate let parentID = Expression<Int64>("parent_id")
 fileprivate let ordering = Expression<Int64>("ordering")
@@ -78,11 +58,10 @@ fileprivate let value = Expression<String>("value")
 
 let userAppItems = itemsTable.order(parentID, ordering).filter(parentID == 136 || parentID == 137).select(rowid)
 let rowIDs = (try db.prepare(userAppItems)).map({ $0[rowid] })
-
-let query = appsTable.select(rowid, title).filter(rowIDs.contains(rowid))
+let appTitlesTable = appsTable.select(rowid, title).filter(rowIDs.contains(rowid))
 
 typealias AppItem = (rowID: Int64, title: String)
-var appItems = (try db.prepare(query)).map({ AppItem(rowID: $0[rowid], title: $0[title]) })
+var appItems = (try db.prepare(appTitlesTable)).map({ AppItem(rowID: $0[rowid], title: $0[title]) })
 
 appItems.sort(by: { (left, right) in
 	let leftIndex = rowIDs.firstIndex(of: left.rowID)!
