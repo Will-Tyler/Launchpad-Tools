@@ -34,6 +34,7 @@
 		4C46E09521F4DCDF00927669 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46E09421F4DCDF00927669 /* Item.swift */; };
 		4C46E09721F4DCEB00927669 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46E09621F4DCEB00927669 /* App.swift */; };
 		4C46E09921F4DEA200927669 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46E09821F4DEA200927669 /* Group.swift */; };
+		4C56A09921FB96B1003518B2 /* LaunchpadDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56A09821FB96B1003518B2 /* LaunchpadDB.swift */; };
 		8515A9C993677A1F08DB9AFA /* Pods_Launchpad_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		4C46E09421F4DCDF00927669 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4C46E09621F4DCEB00927669 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		4C46E09821F4DEA200927669 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		4C56A09821FB96B1003518B2 /* LaunchpadDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchpadDB.swift; sourceTree = "<group>"; };
 		9E68BDA8970DE9ADF20975B5 /* Pods_Launchpad_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Launchpad_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFED5BBD756EB2564A8CFE3 /* Pods-Launchpad Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launchpad Tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-Launchpad Tools/Pods-Launchpad Tools.release.xcconfig"; sourceTree = "<group>"; };
 		C1B2F82255EE01282C1F9B59 /* Pods-Launchpad Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launchpad Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Launchpad Tools/Pods-Launchpad Tools.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				4C46E09621F4DCEB00927669 /* App.swift */,
 				4C46E09821F4DEA200927669 /* Group.swift */,
 				4C46E09421F4DCDF00927669 /* Item.swift */,
+				4C56A09821FB96B1003518B2 /* LaunchpadDB.swift */,
 			);
 			path = "Launchpad Tools";
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				4C24730521F3D2490024A855 /* FTS4.swift in Sources */,
 				4C2472FE21F3D2490024A855 /* Blob.swift in Sources */,
+				4C56A09921FB96B1003518B2 /* LaunchpadDB.swift in Sources */,
 				4C2472FF21F3D2490024A855 /* Errors.swift in Sources */,
 				4C24730921F3D2490024A855 /* Coding.swift in Sources */,
 				4C24730421F3D2490024A855 /* RTree.swift in Sources */,
