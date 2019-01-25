@@ -81,8 +81,6 @@ fileprivate func condense(parentIDs: Set<Int64>) throws {
 	}
 }
 
-try condense(parentIDs: [126, 132, 133])
-
 fileprivate func sort(parentIDs: Set<Int64>) throws {
 	let userAppItems = itemsTable.order(parentID, ordering).filter(parentIDs.contains(parentID)).select(rowid)
 	let rowIDs = (try db.prepare(userAppItems)).map({ $0[rowid] })
@@ -106,8 +104,8 @@ fileprivate func sort(parentIDs: Set<Int64>) throws {
 	while index < count-1 {
 		let left = appItems[index]
 		let right = appItems[index+1]
-		let leftTitle = left.title
-		let rightTitle = right.title
+		let leftTitle = left.title.lowercased()
+		let rightTitle = right.title.lowercased()
 
 		if leftTitle > rightTitle { // should swap
 			appItems[index] = right
@@ -146,3 +144,6 @@ fileprivate func sort(parentIDs: Set<Int64>) throws {
 
 	LaunchpadDB.shouldIgnoreItemUpdates = false
 }
+
+//try condense(parentIDs: [126, 132, 133])
+try sort(parentIDs: [126, 132, 133])
